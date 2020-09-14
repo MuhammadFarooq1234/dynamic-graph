@@ -4,6 +4,7 @@ import './styles/App.css';
 
 import Graph from './components/Graph';
 import CustomSlider from './components/Slider';
+import GraphValue from './components/GraphValue';
 
 function App() {
 
@@ -15,7 +16,10 @@ function App() {
 
   return (
     <div className="App">
-      <CustomSlider value={value} onChange={handleChange}/>
+      <div className="GraphData">
+        <CustomSlider value={value} onChange={handleChange}/>
+        <GraphValue value={value}/>
+      </div>
       <Graph value={value}/>
     </div>
   );

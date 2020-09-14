@@ -1,6 +1,10 @@
 .Slider {
     width: 300px;
     margin: 20px;
+    border-right:#b9bab9 solid medium;
+    border-width: 1px;
+    border-spacing: 10px;
+    padding-right: 5%;
 }
 
 .SliderLabel {

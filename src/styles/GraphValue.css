@@ -1,0 +1,26 @@
+.GraphValue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.GraphValueColor {
+    width:10px;
+    height:40px;
+    background-color: #eab562;
+    margin-right: 20px;
+}
+
+.GraphValueNumbers {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.GraphValueText {
+    margin: 2px;
+    padding: 0;
+}
