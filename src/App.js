@@ -1,24 +1,22 @@
-import React from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+
+import Graph from './components/Graph';
+import CustomSlider from './components/Slider';
 
 function App() {
+
+  const [value, setValue] = useState(10);
+
+  function handleChange(newValue) {
+    setValue(newValue);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CustomSlider value={value} onChange={handleChange}/>
+      <Graph value={value}/>
     </div>
   );
 }
