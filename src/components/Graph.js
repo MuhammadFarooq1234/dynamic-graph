@@ -50,7 +50,7 @@ export default function Graph(props) {
                 ],
         datasets: [
           {
-            label: 'Low Risk',
+            label: 'Personal Savings',
             fill: true,
             lineTension: 0.5,
             backgroundColor: '#f4e4c9',
@@ -61,7 +61,7 @@ export default function Graph(props) {
             data: []
           },
           {
-            label: 'Medium Risk',
+            label: 'Traditional Investing',
             fill: true,
             lineTension: 0.5,
             backgroundColor: '#f0d09b',
@@ -72,7 +72,7 @@ export default function Graph(props) {
             data: []
           },
           {
-            label: 'High risk',
+            label: 'WealthSimple',
             fill: true,
             lineTension: 0.5,
             backgroundColor: '#eab562',
@@ -109,7 +109,6 @@ export default function Graph(props) {
 
         <div className="Graph">
             <Line
-                type='LineWithLine'
                 data={data}
                 options={chartOptions}
             />
